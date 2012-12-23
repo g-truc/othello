@@ -1,0 +1,53 @@
+=====================================================
+Othello GL
+
+=====================================================
+Copyright 2003, G-Truc Creation (www.g-truc.fr.st) et Code GBA (www.codegba.fr.st)
+
+=====================================================
+  Othello GL vous permet de jouer à Othello à 2 joueurs ou seul contre un IA à 5 niveaux de difficultés.
+  En C++ et OpenGL pour Windows et Linux, sous licence GNU General Public Licence.
+
+=====================================================
+Beta 3.00 - 04/04/2003
+
+- G-Othello renommé en Othello GL.
+- Optimisation du code, jusqu'à 31% plus rapide.
+- Traduction anglaise, allemande et espagnol.
+- Intégre la conception.
+- Fixe le bug d'affichage des sauves.
+- Fixe le bug du curseur qui disparait et fait crasher.
+- Fixe le bug de FPS erroné sous Linux.
+- Fixe le bug de non délai d'attente quand une IA joue sous Linux.
+
+=====================================================
+Beta 2.00 - 19/02/2003
+
+- Résoud le problème de non libération de la mémoire dynamique.
+- Ajoute la sauvegarde et la visualisation des meilleurs scores.
+- 5 niveaux pour l'IA.
+- Grille de 8 * 8.
+- Delai après les coup de l'IA
+- Utilise GTL Alpha 2.01
+
+=====================================================
+Beta 1.00 - 07/02/2003
+
+- Parties jouables.
+- IA en 3 niveaux.
+- Utilise GTL Alpha 1.00
+
+=====================================================
+Crédits
+
+Programmation & Conception : 
+- Groove, groove@g-truc.fr.st
+- MatRem, matrem@codegba.fr.st
+
+Remerciement spécial :
+- Anybody, traduction allemande
+- Gautier, traduction espagnole
+- tChai, beta-test
+- Les habitués de GameLab (www.game-lab.com) notamment Bicou, Blade, Invalide, RedEyes, Squintik ...
+
+=====================================================

@@ -1,0 +1,1 @@
+Les .o compilées par GCC sont enregistrer dans ce répertoire.

@@ -1,0 +1,64 @@
+========================================================================
+G.T.L. (Groove Truc Library ou G-Truc Lib)
+
+========================================================================
+Copyright 2003 G-Truc Creation (www.g-truc.fr.st)
+par Groove (groove@g-truc.fr.st)
+
+========================================================================
+  GTL est ma petite bibliothèque personnelle qui regroupe des éléments 
+de coding réutilissable comme le chargement d'images, les vecteurs, les 
+matrices et autres outils mathématiques. 
+  GTL est sous licence GPL. 
+  GTL est inclut dans l'espace de nom "gtl". 
+
+========================================================================
+Alpha 3.00 - 21/03/2003
+- Chargement, manipulation et affichage de charactères à l'écran en OpenGL.
+- 2 fonts disponibles.
+- Chargement d'images BMP 24 bits aux formats RGB 24 bit ou BGR 24 bits.
+- Chargement d'images TGA 8 bits (palette) aux formats RGB 24 bits et BGR 24 bits.
+- Chargement d'images TGA 24 bits aux formats ARGB 16 bits, RGB 24 bits, BGR 24 bits, RGBA 32 bits et BGRA 32 bits.
+- Chargement d'images TGA 32 bits aux formats RGBA 32 bits et BGRA 32 bits.
+- Chargement d'images RAW.
+- Ajoute un exemple d'utilisation du chargement d'images.
+- Ajoute un exemple d'utilisation des fonts.
+- Ajoute header pour OpenGL 1.4.
+- Aide à la manipulation de la mémoire dynamique.
+- Aide à la manipulation des DLL et SO.
+- Fixe les problèmes de fuites de mémoires.
+- Supprime les éléments concernant les matrices.
+- Supprime les éléments concernant la gestion des champs de bits.
+- Supprime les vecteurs de rang 4 et N.
+- Le tout pour Visual C++ 6, Visual C++ 7/.net et GCC 3.2.
+
+========================================================================
+Alpha 2.01 - 17/02/2003
+- Ajout du chargement d'images BMP 24 Bits
+
+========================================================================
+Alpha 2.00 - 15/02/2003
+- Inclut dans un espace de nom.
+- Outil d'utilisation des DLLs.
+
+========================================================================
+Alpha 1.00 - 02/02/2003
+- Chargement d'images TGA 8, 24 et 32 Bits.
+- Vecteur a 2, 3, 4 et N dimension.
+- Matrice a 2, 3, 4 et N dimension.
+- Définition de couleurs.
+- Gestion des nombres aléatoires.
+- Define des types de données entier et flotant.
+- Model simplifié des cosinus et sinus.
+- Inversion de bit.
+- Outil de comparaison.
+- Conversion radian -> degré et inversement.
+- Gestion des champs de bits.
+
+========================================================================
+Crédits
+
+Programmation : 
+- Groove, groove@g-truc.fr.st
+
+========================================================================

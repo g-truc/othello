@@ -1,0 +1,13 @@
+PLAYER 1
+PLAYER 2
+Type : 
+Level : 
+Name : 
+Human
+A.I.
+Start Game
+Continiou Game
+High Scores
+Quit
+ it's your turn
+ is the winner

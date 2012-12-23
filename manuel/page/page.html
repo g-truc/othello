@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+ <TITLE>Othello GL - Manuel</TITLE>
+ <LINK href="./script/style.css" rel="stylesheet" type="text/css"/>
+</HEAD>
+<BODY>
+ <TABLE>
+  <TR><TD class="une_news_titre"><A name="presentation"/>Presentation</TD></TR>
+  <TR><TD class="une_news_contenu">
+   <A name="regles"><I>The rules</I></A><BR>
+    Othello is a game where you need to have the maximum of pawn on the tray at the end of the game. Each player put down a pawn afterward the autre player. The white player (the number 1) allways start the game. To turn over the competitor pawn, you need to flank the competitor pawn with our pawn.<BR><BR>
+    Here is an exemple of the possibility of the white player to put down his frist pawn.<BR>
+    <img src="./image/plateau_coup_blanc.jpg" width="320" height="320"><BR>
+    The cross point out all the positions where the white player can put his pawn.<BR>
+   <BR>
+   <A name="ecran"><I>The display</I></A><BR>
+     Here is the display you can see in game.<BR>
+     <A href="./image/information.jpg" target="_black"><img src="./image/information.jpg" width="320" height="240"></A><BR>
+     Look at the top right corner where it is print the number of image per second.<BR>
+    </P>
+   </TD></TR>
+  </TABLE><BR>
+  <TABLE>
+   <TR><TD class="une_news_titre"><A name="commencer"/>Start game</TD></TR>
+   <TR><TD class="une_news_contenu">
+    <img src="./image/commencer.jpg" width="320" height="240"><BR>
+    <A name="joueurs"><I>Choix des joueurs</I></A><BR>
+     The start menu allow to choose the type of each player, if there are human or an AI. In the case of an human player you can enter his name and in the case of an AI player, you can choose his level. The frist player is allways the white player and the second player is allways the black player.<BR>
+    <BR>
+    <A name="ia"><I>The AI</I></A><BR>
+     The AI have 5 difficults level.<BR>
+     He is build on a couple of concept : Compting of pawns and value of the tray cases. The AI works in 3 stages.<BR>
+     - It search the cases with the highest value where a pawn can be put down.<BR>
+     - With the find cases, it search the maximum number of pawn it can turn over.<BR>
+     - At last, if there is several posibles pawn , it make a random choose.<BR>
+    <BR>
+    </TD></TR>
+  </TABLE><BR>
+  <TABLE>
+   <TR><TD class="une_news_titre"><A name="controles"/>Controls</TD></TR>
+   <TR><TD class="une_news_contenu">
+    <A name="choisir"><I>Choose a position</I></A><BR>
+     During the game, it printf the name of the player who must play in the information tray. This player must move the multi-colored curcor over the case he have choose and he valid his selected case.<BR>
+     To done this, he can use the arrows or the numeric keypad and use the "enter" key to valid.<BR>
+     <BR>
+     <A name="deplacer"><I>Move and turn the tray</I></A><BR>
+     x : Turn the tray around the axis X in the positive direction<BR>
+     X : Turn the tray around the axis X in the negative direction<BR>
+     y : Turn the tray around the axis Y in the positive direction<BR>
+     Y : Turn the tray around the axis Y in the negative direction<BR>
+     z : Turn the tray around the axis Z in the positive direction<BR>
+     Z : Turn the tray around the axis Z in the negative direction<BR>
+     + : Move the tray closer.<BR>
+     - : Move the tray away.<BR>
+     Echap : Show the main main at each time.<BR>
+   </TD></TR>
+  </TABLE><BR>
+  <TABLE>
+   <TR><TD class="une_news_titre"><A name="credits"/>Credits</TD></TR>
+   <TR><TD class="une_news_contenu">
+    Programmation & Conception : <BR>
+    - <A href="mailto:groove@g-truc.fr.st">Groove</A>, <A href="http://www.g-truc.fr.st">www.g-truc.fr.st</A><BR>
+    - <A href="mailto:matrem@codegba.fr.st">MatRem</A>, <A href="http://www.codegba.fr.st">www.codegba.fr.st</A><BR>
+    <BR>
+    Special thanks to :<BR>
+    - Anybody, German translation<BR>
+    - Gautier, Spanish translation<BR>
+    - tChai, beta-test<BR>
+    - GameLab regular's (www.game-lab.com) as Bicou, Blade, Invalide, RedEyes, Squintik ...<BR>
+    <BR>
+   </TD></TR>
+  </TABLE><BR>
+  <TABLE>
+   <TR align="center"><TD class="centre_titre">G-Othello, Copyright (c) 2003 <A class="titre" href="http://www.g-truc.fr.st">G-Truc Creation</A>.</TD></TR>
+  </TABLE>
+</BODY>
+</HTML>

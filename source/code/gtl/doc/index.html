@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml-stylesheet href="./style.css" type="text/css" media="screen">
+<HTML xmlns="http://www.w3.org/TR/xhtml1" lang="fr" xml:lang="fr">
+<HEAD>
+ <TITLE>G-Truc Creation, G.T.L.</TITLE>
+ <LINK href="./style.css" rel="stylesheet" type="text/css"/>
+</HEAD>
+<BODY>
+ <TABLE>
+  <TR><TD class="une_news_titre">GTL</TD></TR>
+ </TABLE><BR>
+
+ <TABLE>
+  <TR><TD class="une_news_titre">Sommaire</TD></TR>
+  <TR><TD class="une_news_contenu">
+   <DL>
+    <A href="./presentation.html"><LI>Présentation</LI></A>
+    <DL>
+     <A href="#intro"><LI>Introduction</LI></A>
+     <A href="#rand"><LI>Gestion des nombres aléatoires</LI></A>
+     <A href="#vector"><LI>Calculs vectoriels</LI></A>
+     <A href="#image"><LI>Chargement d'images</LI></A>
+    </DL>
+     <A href="../../../ftp/gtl/index.html"><LI>téléchargement</LI></A>
+   </DL>
+  </TD></TR>
+ </TABLE><BR>
+
+ <A name="#intro"/>
+ <TABLE>
+  <TR><TD class="une_news_titre"></A>Introduction</TD></TR>
+  <TR><TD class="une_news_contenu">
+   GTL est ma petite bibliothèque personnelle qui regroupe des éléments de coding réutilissable comme le chargement d'images, le changement de fonts, les vecteurs et divers outils.<BR/>
+   GTL est sous licence GPL.<BR/>
+   GTL est inclut dans l'espace de nom "gtl".<BR/>
+  </TD></TR>
+ </TABLE><BR>
+
+ <A name="#rand"/>
+ <TABLE>
+  <TR><TD class="une_news_titre">Gestion des nombres aléatoires</TD></TR>
+  <TR><TD class="une_news_contenu">
+   <P>
+    GTL permet la gestion des nombres aléatoires au travers du fichier gtl_rand.h
+   </P>
+   <P>
+        Voici la liste des fonctions que ce fichier vous propose :<BR/><BR/>
+        void RandInit (long iStart = clock ())<BR/>
+        Initialise le générateur de nombres aléatoires. Si la fonction est appelé sans parametre alors elle est inicialisé avec la fonction clock () qui retourne le temps écoulé depuis le lancement de l'execution du programme.<BR/>
+        <BR/>
+        float RandFloat ()<BR/>
+        Retourne un nombre flotant entre 0 et 1.<BR/>
+        <BR/>
+        long RandFloat (long iMax)<BR/>
+        Retourne un nombre entier entre 0 et iMax<BR/>
+        <BR/>
+        float RandFloat (long iMin, long iMax)<BR/>
+        Retourne un nombre flotant entre iMin et iMax<BR/>
+        <BR/>
+        long RandInt (long iMin, long iMax)<BR/>
+        Retourne un nombre entier entre iMin et iMax<BR/>
+        <BR/>
+   </P>
+  </TD></TR>
+ </TABLE><BR>
+
+ <A name="#vector"></A>
+ <TABLE>
+  <TR><TD class="une_news_titre">Calculs vectoriels</TD></TR>
+  <TR><TD class="une_news_contenu">
+   GTL vous permet de réaliser des calculs vectoriels à l'aide de classe template : CVector2<T>, CVector3<T>.<BR/>
+   Pour simplifier la notation j'appelerai tout vecteur CVector2 et CVector3; CVectorX lorsqu'ils ont des propriétés communes<BR/><BR/>
+   CVector2 (T x, T y)<BR/>
+   CVector3 (T x, T y, T z)<BR/>
+   Constructeurs à partir de constante<BR/><BR/>
+   CVectorX (const CVectorX& v)<BR/>
+   Constructeur par copie<BR/><BR/>
+   CVectorX (T array[X])<BR/>
+   Constructeur en utilisant un tableau de même rang.<BR/><BR/>
+   CVectorX reconnait les opérateurs +, -, *, /, +=, -=, *=, /=, = et ^ (Produit vectoriel)<BR/><BR/>
+   Il est également possible de transferter les données d'un vecteur à un tableau grâce aux opérateurs << et >> <BR/>
+   CVectorX possède 2 autres fonctions :<BR/>
+   T Lenght () const <BR/>
+   Calcule la norme d'un vecteur<BR/><BR/>
+   CVectorX<T> Normalize () const <BR/>
+   Normalise le vecteur, c'est à dire retour un vecteur avec une norme égale à 1.<BR/><BR/>
+   L'opérateur [] permet d'accéder à chacun des membres du vecteur<BR/>
+  </TD></TR>
+ </TABLE><BR/>
+ 
+ <A name="#image"></A>
+ <TABLE>
+  <TR><TD class="une_news_titre">Chargement d'images</TD></TR>
+  <TR><TD class="une_news_contenu">
+   GTL permet le chargement d'images TGA 8, 24, 32 bits, BMP 24 bits et RAW.<BR/><BR/>
+   Pour charger une image BMP et TGA, 2 solutions :<BR/>
+   - Par constructeur : CImageTGA (const char* szFilename, color_format_t ColorFormat = COLOR_FORMAT_DEFAULT) et CImageBMP (const char* szFilename, color_format_t ColorFormat = COLOR_FORMAT_DEFAULT)<BR/>
+   - Par appel de fonction : bool Load (const char* szFilename, color_format_t ColorFormat = COLOR_FORMAT_DEFAULT)<BR/>
+   <BR/>
+   Dans ce cas d'une image RAW il faut également préciser les dimensions de l'images grâce a la fonction : <BR/>
+   void Init (const unsigned short iWitdh, const unsigned short iHeight)<BR/>
+   Mais on peut également utiliser le constructeur :<BR/>
+   CImageRAW (const char* szFilename, const unsigned short iWitdh, const unsigned short iHeight, const color_format_t Format = COLOR_FORMAT_DEFAULT)<BR/>
+   <BR/>
+   Acces aux donnés :<BR/>
+   - Récupération du format : color_format_t GetFormat () const<BR/>
+   - Récupération de la hauteur de l'image : unsigned short GetHeight () const<BR/>
+   - Récupération de la largeur de l'image : unsigned short GetWidth () const<BR/>
+   - Récupération des données de l'image : unsigned char* GetData () const<BR/>
+  </TD></TR>
+ </TABLE><BR>
+</BODY>
+</HTML>
